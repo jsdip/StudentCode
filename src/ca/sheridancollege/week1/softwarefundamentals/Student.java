@@ -82,6 +82,8 @@ public class Student {
         this.maxCourse = maxCourse;
     }
     
+   
+    
     
     
 }
