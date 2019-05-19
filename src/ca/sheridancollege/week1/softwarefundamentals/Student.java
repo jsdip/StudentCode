@@ -5,6 +5,8 @@
  */
 package ca.sheridancollege.week1.softwarefundamentals;
 
+import java.beans.PropertyChangeSupport;
+
 /**
  *
  * @author mehta date
@@ -81,6 +83,11 @@ public class Student {
     public void setMaxCourse(int maxCourse) {
         this.maxCourse = maxCourse;
     }
+    private final transient PropertyChangeSupport propertyChangeSupport = new java.beans.PropertyChangeSupport(this);
+    public static final String PROP_NAME = "name";
+    public static final String PROP_ID = "ID";
+    public static final String PROP_PROGRAM = "Program";
+    public static final String PROP_MAXCOURSE = "maxCourse";
     
    
     
